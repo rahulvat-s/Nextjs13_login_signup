@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/navigation";
 import Loader from "../component/loader";
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -256,7 +256,7 @@ const page = () => {
             <Link href="/forgot">Forgot your password?</Link>
           </div> */}
           <div className="mt-3 text-xs flex justify-between items-center text-[#04489c] font-medium">
-            <p>Don't have an account?</p>
+            <p>Dont have an account?</p>
             <button className="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300">
               <Link href="/signup">Signup</Link>
             </button>
@@ -275,4 +275,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
